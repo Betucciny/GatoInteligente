@@ -1,0 +1,38 @@
+:root {
+  --grid-size: 450px;
+  --margin-size: 10px;
+  --square-size: calc((var(--grid-size) / 3) - var(--margin-size));
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+#grid {
+
+  align-content: space-between;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: var(--grid-size);
+  width: var(--grid-size);
+}
+
+#grid div {
+  background-color: white;
+  height: var(--square-size);
+  width: var(--square-size);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#grid div img {
+  width: 100%;
+}

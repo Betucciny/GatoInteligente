@@ -1,26 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&family=Work+Sans:wght@100&display=swap');
+
 :root {
   --grid-size: 450px;
   --margin-size: 10px;
   --square-size: calc((var(--grid-size) / 3) - var(--margin-size));
 }
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  width: 100vw;
   align-items: center;
+  background-color: rgba(118,0,60,0.7);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container--main{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
 }
 
 #grid {
-
   align-content: space-between;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   height: var(--grid-size);
   width: var(--grid-size);
+  align-self: center;
+  margin: auto;
 }
 
 #grid div {
@@ -31,8 +45,83 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 #grid div img {
   width: 100%;
+}
+
+.gato{
+  display: flex;
+  flex-direction: column;
+  width: 50%; 
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.logo--UPIIT{
+  display: flex;
+  width: 25%;
+  justify-content: center;
+}
+
+.logo--IPN{
+  display: flex;
+  width: 25%;
+  justify-content: center;
+}
+
+.img--whidt img{
+  height: 20em;
+  width: 20em;
+  padding: 2em;
+  align-items: center;
+}
+
+.gato h1{
+  font-size: 2rem;
+}
+
+.botones--gato{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  padding: 1.5em;
+  width: 35vw;
+}
+
+.botones--gato button{
+  padding: 0.7em 1.5em;
+  font-size: 1.1rem;
+  background-color: white;
+  border: none;
+  border-radius: 3000em;
+}
+
+.botones--gato button:hover{
+  box-shadow:
+  inset 0 -3em 3em rgba(0,0,0,0.1);
+  transition: all .4s;
+  background-color: #76003c;
+  color: white;
+}
+
+.text--instagram{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-self: flex-end;
+  color: white;
+}
+.text--instagram h2{
+  width: 100%;
+  font-size: 2.5rem;
+}
+
+.gato h1{
+  color: white;
 }

@@ -112,7 +112,6 @@ function bestMove(jugador){
       if (board[i][j] === ''){
         board[i][j] = jugador;
         score = minimax(board, 0, isMax);
-        console.log(i,j,score)
         board[i][j] = '';
         if(jugador === 'x'){
           if (score > bestScore){
@@ -202,7 +201,7 @@ function minimax(board, depth, isMax){
     for (let j = 0; j < 3; j++) {
       if (board[i][j] === '') {
         board[i][j] = player;
-        score = minimax(board, depth + 1, !isMax)*((10)**(-depth));
+        score = minimax(board, depth + 1, !isMax);
         board[i][j] = '';
         if(isMax){
           if (score > bestScore) {
@@ -220,12 +219,35 @@ function minimax(board, depth, isMax){
 }
 
 
-const cajasLibres = [];
-// Mapa de cajas numeradas -> 'x' o 'o'
-const cajasOcupadas = {};
-const cajas = document.querySelectorAll('#grid div');
-for (const caja of cajas) {
-  caja.addEventListener('click', cambiarAX);
-  cajasLibres.push(caja);
+
+function player1(){
+  reiniciar()
 }
-computadoraEscogeO();
+
+function player2(){
+  reiniciar()
+  computadoraEscogeO();
+}
+
+function reiniciar(){
+  cajasOcupadas = new Map();
+  cajasLibres = [];
+  const cajas = document.querySelectorAll('#grid div');
+  document.querySelector('#results').innerHTML = '';
+  for (const caja of cajas) {
+
+    caja.innerHTML = '';
+    caja.addEventListener('click', cambiarAX);
+    cajasLibres.push(caja);
+  }
+}
+
+let cajasLibres = [];
+let cajasOcupadas = new Map();
+
+
+const buttonHumano = document.getElementById('playerUno');
+buttonHumano.addEventListener('click', player1)
+
+const buttonMaquina = document.getElementById('playerDos');
+buttonMaquina.addEventListener('click', player2)

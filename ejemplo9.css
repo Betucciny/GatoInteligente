@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&family=Work+Sans:wght@100&display=swap');
 
 :root {
-  --grid-size: 450px;
+  --grid-size: 60vh;
   --margin-size: 10px;
   --square-size: calc((var(--grid-size) / 3) - var(--margin-size));
 }

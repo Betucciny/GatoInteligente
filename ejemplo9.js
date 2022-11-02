@@ -1,5 +1,5 @@
-const X_IMAGE_URL = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1083533/x.png';
-const O_IMAGE_URL = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1083533/circle.png';
+const X_IMAGE_URL = '../assets/imgs/x.png';
+const O_IMAGE_URL = '../assets/imgs/o.png';
 
 function asignaEspacio(espacio, propietario) {
   const image = document.createElement('img');

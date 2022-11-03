@@ -1,5 +1,5 @@
 :root{
-  --grid-size: 70vh;
+  --grid-size: 70vw;
   --margin-size: 1em;
   --square-size: calc((var(--grid-size)/3) - var(--margin-size))
 }

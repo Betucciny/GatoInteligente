@@ -1,5 +1,5 @@
 :root{
-  --grid-size: 70vw;
+  --grid-size: 40vw;
   --margin-size: 1em;
   --square-size: calc((var(--grid-size)/3) - var(--margin-size))
 }
@@ -187,6 +187,9 @@ aside{
 
 
 @media (max-width: 1200px) {
+  :root{
+    --grid-size: 80vw;
+  }
   .container--main {
     width: 100%;
     height: auto;

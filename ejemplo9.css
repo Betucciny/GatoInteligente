@@ -63,7 +63,6 @@ header{
 .img--whidt--IPN img{
   max-height: 12em;
   max-width: 12em;
-  
   align-items: center;
 }
 
@@ -77,7 +76,6 @@ main{
   display: flex;
   flex-wrap: wrap;
   width: 70%;
-  /*height: ;*/
   justify-content: center;
 }
 

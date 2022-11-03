@@ -1,5 +1,5 @@
 :root{
-  --grid-size: 40vw;
+  --grid-size: 35vw;
   --margin-size: 1em;
   --square-size: calc((var(--grid-size)/3) - var(--margin-size))
 }
@@ -85,7 +85,7 @@ aside{
   width:30%;
   display: flex;
   flex-wrap: wrap;
-  height: 90vh;
+  height: 88vh;
   background-color: white;
 }
 

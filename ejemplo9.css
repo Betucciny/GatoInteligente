@@ -1,17 +1,20 @@
+:root{
+  --grid-size: 70vh;
+  --margin-size: 1em;
+  --square-size: calc((var(--grid-size)/3) - var(--margin-size))
+}
 
 *{
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Abel';
+  font-family: 'Abel', serif;
   font-style: normal;
   width: 100vw;
   align-items: center;
-  background: url(../assets/imgs/52e07824baa00f4f5b4b26ee4392db55.jpg);
-  background-repeat: no-repeat;
+  background: url('assets/imgs/52e07824baa00f4f5b4b26ee4392db55.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -73,8 +76,8 @@ main{
 .container--main{
   display: flex;
   flex-wrap: wrap;
-  height: 70vh;
   width: 70%;
+  /*height: ;*/
   justify-content: center;
 }
 
@@ -92,22 +95,19 @@ aside{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: auto;
+  height: var(--grid-size);
+  width: var(--grid-size);
   align-self: center;
-  margin: auto;
-  width: 100%;
-  padding:  1em 20em;
   max-width: 1250px;
 }
 
 #grid div {
   background-color: #75003E;
-  height: 10em;
-  max-width: 10em;
+  height: var(--square-size);
+  width: var(--square-size);
   display: flex;
   justify-content: center;
-  align-items: center;  
-  width: 33%;
+  align-items: center;
   box-shadow: 9px 6px 13px rgba(0, 0, 0, 0.25);
   margin-top: 0.2em;
 }
@@ -144,7 +144,7 @@ aside{
   align-items: center;
   justify-content: space-between;
   padding: 1.5em;
-  width: 35vw;
+  height: 4rem;
   width: 100%;
 }
 
@@ -153,14 +153,13 @@ aside{
   font-size: 1.7rem;
   color: white;
   width: 900%;
-  font-family: 'Abel';
+  font-family: 'Abel', serif;
   font-style: normal;
   background: #75003E;
   box-shadow: 9px 6px 13px rgba(0, 0, 0, 0.25);
   border-radius: 115px;
   border: none;
   max-width: 10em;
-  margin-top: -2em;
 }
 
 .botones--gato button:hover{

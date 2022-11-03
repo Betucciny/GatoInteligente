@@ -1,5 +1,5 @@
-const X_IMAGE_URL = '../assets/imgs/x.png';
-const O_IMAGE_URL = '../assets/imgs/o.png';
+const X_IMAGE_URL = 'assets/imgs/x.png';
+const O_IMAGE_URL = 'assets/imgs/o.png';
 
 function asignaEspacio(espacio, propietario) {
   const image = document.createElement('img');
@@ -24,7 +24,6 @@ function cambiarAX(event) {
 }
 
 function computadoraEscogeO() {
-  const todasLasCajas  = document.querySelectorAll('#grid div');
   const indice = bestMove('o');
   const espacioLibre = cajasLibres[indice];
 

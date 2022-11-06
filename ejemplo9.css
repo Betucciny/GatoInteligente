@@ -1,5 +1,5 @@
 :root{
-  --grid-size: 35vw;
+  --grid-size: 30vw;
   --margin-size: 1em;
   --square-size: calc((var(--grid-size)/3) - var(--margin-size))
 }
@@ -88,6 +88,7 @@ aside{
 }
 
 #grid {
+  margin: 1em;
   align-content: space-between;
   background-color: rgba(0, 0, 0, 0);
   display: flex;
@@ -122,7 +123,6 @@ aside{
 }
 
 .info--total{
-  
   padding: 2em;
 }
 
